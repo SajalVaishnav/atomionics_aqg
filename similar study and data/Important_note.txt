@@ -1,0 +1,29 @@
+
+******Note******
+
+The ocean loading correction in some of the AQG#B01 data files shows a sign error due to a software issue at the time.
+The corrected gravity value given in the data is calculated from:
+g_corrected = g_raw - sum(corrections)
+
+The ocean loading correction needs hence to be added than to be subtracted. Practically speaking, adding 2 x delta_g_ocean_loading..nm.s.2. to "corrected.vertical.gravity..nm.s.2." compensates for this error.
+
+This modification involves the following files:
+
+/Montpellier/AQG-B/Coriolis/capture_20200430_174652_0.csv
+/Montpellier/AQG-B/Coriolis/capture_20200504_103248_0.csv
+/Montpellier/AQG-B/Coriolis/capture_20200505_141123_0.csv
+/Montpellier/AQG-B/Coriolis/capture_20200506_165048_0.csv
+/Montpellier/AQG-B/Coriolis/capture_20200507_173207_0.csv
+/Montpellier/AQG-B/Coriolis/capture_20200510_174537_0.csv
+/Montpellier/AQG-B/Coriolis/capture_20200512_094148_0.csv
+/Montpellier/AQG-B/Coriolis/capture_20200514_100327_0.csv
+
+/Montpellier/AQG-B/capture_20200420_091517_0.csv
+/Montpellier/AQG-B/capture_20200423_152421_0.csv
+/Montpellier/AQG-B/capture_20200427_170840_0.csv
+/Montpellier/AQG-B/capture_20200428_163822_0.csv
+
+
+Anne-Karin Cooke, 04/09/2020
+
+In case of further questions, please contact me at : annekacooke (at) gmail.com
